@@ -1,6 +1,8 @@
 # LiteSuggest
 A lightweight jQuery plugin for suggesting answers in form inputs.
 
+#### [Demo](http://ariellebryn.github.io/litesuggest)
+
 ## Using LiteSuggest
 To use LiteSuggest, you _must_ be using jQuery.
 
