@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Litesuggest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/litesuggest.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>lite<span class="litesuggest-correct">suggest</span></h1>
+        <span class="help">type words below (yes, click the lines there) and watch as the computer gives you suggestions</span>
+        <div class="litesuggest-group test">
+            <span class="desc">Try typing any of the following: <span class="word">Apples</span>, <span class="word">Oranges</span>, <span class="word">Watermelon</span>, <span class="word">Cherries</span>, <span class="word">Strawberries</span></span>
+            <input type="text" name="in" autocomplete="off"/>
+        </div>
+
+        <pre>
+            // Code:
+            $(".container").litesuggest({
+                words: ["Apples", "Oranges", "Watermelon", "Cherries", "Strawberries"],
+                groupSelector: ".test"
+            });
+        </pre>
+
+        <div class="litesuggest-group test2">
+            <span class="desc">Try typing any of the following: <span class="word">Dungeons</span>, <span class="word">Dragons</span>, <span class="word">Bears</span>, <span class="word">Red Pandas</span>, <span class="word">Dungeness Crabs</span>, <span class="word">More bears</span></span>
+            <input type="text" name="in2" autocomplete="off"/>
+        </div>
+        
+        <pre>
+            // Code:
+            $(".container").litesuggest({
+                words: ["Dungeons", "Dragons", "Bears", "Red Pandas", "Dungeness Crabs", "More bears"],
+                groupSelector: ".test2"
+            });
+        </pre>
+    </div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/litesuggest.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".container").litesuggest({
+                words: ["Apples", "Oranges", "Watermelon", "Cherries", "Strawberries"],
+                groupSelector: ".test"
+            });
+
+            $(".container").litesuggest({
+                words: ["Dungeons", "Dragons", "Bears", "Red Pandas", "Dungeness Crabs", "More bears"],
+                groupSelector: ".test2"
+            });
+        });
+    </script>
+</body>
+</html>
