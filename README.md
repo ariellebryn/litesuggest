@@ -26,7 +26,7 @@ Example:
 
  * If you want to have multiple LiteSuggest groups in the same container that use different suggestions, give them different selectors that you can specify when intiating the plugins.
  
- Example: 
+Example: 
 ```
     <div class="litesuggest-group group1">
             <input type="text" name="in" autocomplete="off"/>
@@ -45,7 +45,7 @@ To instantiate, call `.litesuggest()` on your container with your options:
 ```
     $(".container").litesuggest({
         words: ["any", "words", "you want", "to be", "suggested"], // An array of strings, which will be parsed and used for suggestions
-        groupSelector: ".group" // An additional selector you can use if you want to use multiple litesuggest input groups
+        groupSelector: ".group1" // An additional selector you can use if you want to use multiple litesuggest input groups
     });
 ```
 
