@@ -1,6 +1,8 @@
 # LiteSuggest
 A lightweight jQuery plugin for suggesting answers in form inputs.
 
+This plugin is not made for general autocorrect needs nor for huge lists of suggestions--if you want that, you should do most of the computing on a server. If you have a client-side-only website and no server, though, this is perfect for suggesting answers in your form!
+
 #### [Demo](http://ariellebryn.github.io/litesuggest)
 
 ## Using LiteSuggest
